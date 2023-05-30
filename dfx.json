@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "dekeeper_backend": {
+      "main": "src/dekeeper_backend/main.mo",
+      "type": "motoko"
+    },
+    "dekeeper_frontend": {
+      "dependencies": [
+        "dekeeper_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/dekeeper_frontend/src/index.html"
+      },
+      "source": [
+        "src/dekeeper_frontend/assets",
+        "dist/dekeeper_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
