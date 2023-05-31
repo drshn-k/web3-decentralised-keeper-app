@@ -10,6 +10,18 @@
 # dfx temporary files
 .dfx/
 
+<<<<<<< HEAD
 # frontend code
 node_modules/
 dist/
+=======
+# generated files
+src/declarations/
+
+# frontend code
+node_modules/
+dist/
+
+# environment variables
+.env
+>>>>>>> master

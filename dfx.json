@@ -1,5 +1,6 @@
 {
   "canisters": {
+<<<<<<< HEAD
     "dkeeper": {
       "main": "src/dkeeper/main.mo",
       "type": "motoko"
@@ -14,6 +15,22 @@
       "source": [
         "src/dkeeper_assets/assets",
         "dist/dkeeper_assets/"
+=======
+    "dekeeper_backend": {
+      "main": "src/dekeeper_backend/main.mo",
+      "type": "motoko"
+    },
+    "dekeeper_frontend": {
+      "dependencies": [
+        "dekeeper_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/dekeeper_frontend/src/index.html"
+      },
+      "source": [
+        "src/dekeeper_frontend/assets",
+        "dist/dekeeper_frontend/"
+>>>>>>> master
       ],
       "type": "assets"
     }
@@ -24,6 +41,7 @@
       "packtool": ""
     }
   },
+<<<<<<< HEAD
   "dfx": "0.9.3",
   "networks": {
     "local": {
@@ -31,5 +49,8 @@
       "type": "ephemeral"
     }
   },
+=======
+  "output_env_file": ".env",
+>>>>>>> master
   "version": 1
 }
